@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Sumaiya Kouser</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <h1 id="main-title">🎁 I have a 💖Beautiful 👌surprise🌹 for youuuu!</h1>
+  <div class="canvas" id="canvas"></div>
+
+  <div class="button-container">
+    <h1 id="countdown-message" style="display: none;">It's a beautiful🎉 gift🎁 for youuuu!</h1>
+    <button class="start-btn" onclick="startCountdown()">🎁 Click here for surprise 🎁</button>
+  </div>
+  
+  <div id="countdown-box">Wait a second...</div>
+
+  <div class="gallery" id="gallery">
+    <img src="images/smile.jpg" alt="Smile">
+    <img src="images/cute.jpg" alt="Cute">
+    <img src="images/wow.jpg" alt="Wow">
+    <img src="images/beautiful.jpg" alt="Beautiful">
+    <img src="images/special-memory.jpg" alt="Special Memory">
+    <img src="images/beauty.jpg" alt="Beauty">
+    <img src="images/birthday.jpg" alt="Birthday">
+    <img src="images/sister.jpg" alt="Sister">
+    <img src="images/best-time.jpg" alt="Best Time">
+    <img src="images/surprise.jpg" alt="Surprise">
+    <img src="images/best.jpg" alt="Best">
+    <img src="images/cute-moment.jpg" alt="Cute Moment">
+  </div>
+
+  <button class="next-btn" onclick="showNextImage()">👸💖Click for Next 🥳Surprise💝🥰</button>
+
+  <div class="message" id="message">
+    <p>
+      Tu sirf meri behen nahi, meri sabse achhi dost bhi hai. Jab zindagi ne thakaya, toh tera saath sabse bada sahara bana.<br>
+      Tere saath bitaaye har lamhe ne mujhe bepanah khushi di.<br><br>
+      Teri muskurahat meri kamzori hai, aur teri dua meri taqat. Har din Allah se sirf itna hi mangta hoon — tu khush rahe,<br>
+      sehatmand rahe, aur tere har sapne pure hon.<br><br>
+      Tu meri duaon ka hissa hai. Tujhse zyada keemati is duniya mein kuch nahi. Allah tujhe har burai se bachaaye,<br>
+      har gham se door rakhe.<br><br>
+      <strong>Janamdin mubarak ho meri sabse pyari behen 💖🤲</strong>
+    </p>
+    <button class="special-btn" onclick="showShayari()">💫🎉 Click for Something 🥳Special 💫🎉</button>
+  </div>
+
+  <div class="shayari" id="shayari">
+    <p><strong>🎉💖🤲</strong><br>
+      <em>"Behen sirf rishta nahi hoti,<br>
+      Woh zindagi ki dua hoti hai...<br>
+      Jise har dua mein maanga jata hai,<br>
+      Woh Rabb ka khubsurat tohfa hoti hai."</em>
+    </p>
+    <p style="font-size: 1.4em; margin-top: 30px; font-weight: bold; color: #ffe1f0; text-shadow: 1px 1px 5px #ff4da6;">
+      ❤️ Ek baar phir se dil se kehna chahta hoon...<br>
+      Bahut bahut Janamdin Mubarak ho meri chaand si pyari behen ko! 🎂💝
+    </p>
+  </div>
+
+  <audio id="bg-music" loop>
+    <source src="music/birthday.mp3" type="audio/mp3">
+  </audio>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

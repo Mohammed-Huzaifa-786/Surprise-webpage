@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fcb69f);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Arial Balck';
+  font-size: 2.9em;
+  margin-top: 30px;
+  color: white;
+  text-shadow: 5px 5px 5px rgb(47, 234, 255);
+}
+
+.button-container {
+  margin-top: 100px;
+}
+
+.start-btn, .next-btn, .gift-btn, .special-btn {
+  font-size: 1.5em;
+  padding: 15px 25px;
+  background: linear-gradient(135deg, blue, red);
+  border: none;
+  color: whitesmoke;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.start-btn:hover, .next-btn:hover, .gift-btn:hover, .special-btn:hover {
+  background: linear-gradient(135deg, red, blue);
+}
+
+.gallery, .message, .music, .shayari, .next-btn, .gift-btn, .special-btn, #countdown-box {
+  display: none;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes flyAway {
+  0% { transform: scale(1) translateY(0); opacity: 1; }
+  100% { transform: scale(0.5) translate(-300px, -400px) rotate(-45deg); opacity: 0; }
+}
+
+.gallery img {
+  display: none;
+  border-radius: 20px;
+  width: 200px;
+  height: auto;
+  box-shadow: 0 15px 15px black;
+  margin: 20px;
+  transition: transform 0.5s;
+}
+
+.fly-away {
+  animation: flyAway 2s backwards;
+}
+
+.message, .shayari {
+  max-width: 700px;
+  margin: 30px auto;
+  font-size: 1.2em;
+  background-color:black;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px greenyellow;
+  line-height: 1.8;
+}
+
+.canvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  color: red;
+  animation: float 10s ease-in infinite;
+  pointer-events: none;
+  opacity: 0.8;
+  text-shadow: 0 0 5px #ff4da6;
+
+}
+
+@keyframes float {
+  from { transform: translateY(100vh) translateX(0); opacity: 1; }
+  to { transform: translateY(-10vh) translateX(calc(var(--dx))) scale(0.8); opacity: 0; }
+}
+
+#countdown-box {
+  font-size: 3.5em;
+  margin-top: 100px;
+  color: black;
+  text-shadow: 5px 5px 6px grey;
+}
+
+/*Mobile*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fcb69f);
+    color: white;
+    text-align: center;
+    overflow-x: hidden; 
+    position: relative;
+    font-size: 14px; 
+}
+
+h1 {
+    font-family: 'Arial Black'; 
+    font-size: 1.8em; 
+    margin-top: 20px; 
+    color: white;
+    text-shadow: 2px 2px 3px rgb(47, 234, 255); 
+    padding: 0 10px; 
+    line-height: 1.2; 
+}
+
+.button-container {
+    margin-top: 50px; 
+}
+
+.start-btn, .next-btn, .gift-btn, .special-btn {
+    font-size: 1.1em; 
+    padding: 10px 20px; 
+    background: linear-gradient(135deg, blue, red);
+    border: none;
+    color: whitesmoke;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 15px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.start-btn:hover, .next-btn:hover, .gift-btn:hover, .special-btn:hover {
+    background: linear-gradient(135deg, red, blue);
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.gallery, .message, .music, .shayari, .next-btn, .gift-btn, .special-btn, #countdown-box {
+    display: none; 
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes flyAway {
+    0% { transform: scale(1) translateY(0); opacity: 1; }
+    100% { transform: scale(0.5) translate(-150px, -200px) rotate(-45deg); opacity: 0; } 
+}
+
+.gallery img {
+    display: none; 
+    border-radius: 20px;
+    width: 150px; 
+    height: auto; 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); 
+    margin: 10px; 
+    transition: transform 0.5s;
+}
+
+.fly-away {
+    animation: flyAway 2s backwards;
+}
+
+.message, .shayari {
+    max-width: 90%; 
+    margin: 20px auto; 
+    font-size: 0.95em; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 15px; 
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(173, 255, 47, 0.7); 
+    line-height: 1.5; 
+    text-align: center; 
+}
+
+.canvas {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.particle {
+    position: absolute;
+    color: red; 
+    animation: float 10s ease-in infinite;
+    pointer-events: none;
+    opacity: 0.8;
+    text-shadow: 0 0 5px #ff4da6;
+}
+
+@keyframes float {
+    from { transform: translateY(100vh) translateX(0); opacity: 1; }
+    to { transform: translateY(-10vh) translateX(calc(var(--dx))) scale(0.8); opacity: 0; }
+}
+
+#countdown-box {
+    font-size: 2.5em; 
+    margin-top: 50px; 
+    color: black;
+    text-shadow: 2px 2px 4px grey; 
+}
+
+/* Tablets */
+
+@media (min-width: 600px) {
+    body {
+        font-size: 16px; 
+    }
+
+    h1 {
+        font-size: 2.2em;
+        margin-top: 25px;
+        text-shadow: 3px 3px 4px rgb(47, 234, 255);
+    }
+
+    .button-container {
+        margin-top: 70px;
+    }
+
+    .start-btn, .next-btn, .special-btn {
+        font-size: 1.3em;
+        padding: 12px 22px;
+    }
+
+    #countdown-box {
+        font-size: 3em;
+        margin-top: 70px;
+    }
+
+    .gallery img {
+        width: 180px; 
+        margin: 15px;
+    }
+
+    .message, .shayari {
+        max-width: 600px; 
+        font-size: 1.1em;
+        padding: 20px;
+    }
+}
+
+/* Desktops*/
+
+@media (min-width: 900px) {
+    body {
+        font-size: 16px; 
+    }
+
+    h1 {
+        font-family: 'Arial Balck'; 
+        font-size: 2.9em; 
+        margin-top: 30px;
+        text-shadow: 5px 5px 5px rgb(47, 234, 255); 
+    }
+
+    .button-container {
+        margin-top: 100px; 
+    }
+
+    .start-btn, .next-btn, .gift-btn, .special-btn {
+        font-size: 1.5em; 
+        padding: 15px 25px; 
+        margin-top: 20px;
+    }
+
+    #countdown-box {
+        font-size: 3.5em; 
+        margin-top: 100px;
+        text-shadow: 5px 5px 6px grey;
+    }
+
+    .gallery img {
+        width: 200px; 
+        box-shadow: 0 15px 15px black; 
+        margin: 20px;
+    }
+
+    @keyframes flyAway {
+        100% { transform: scale(0.5) translate(-300px, -400px) rotate(-45deg); opacity: 0; } 
+    }
+
+    .message, .shayari {
+        max-width: 700px; 
+        font-size: 1.2em; 
+        background-color: black; 
+        box-shadow: 0 0 10px greenyellow; 
+    }
+}
