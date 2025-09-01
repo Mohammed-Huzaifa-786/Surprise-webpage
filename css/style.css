@@ -311,3 +311,17 @@ h1 {
         box-shadow: 0 0 10px greenyellow; 
     }
 }
+
+#video-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, skyblue , white);
+}
+
+#birthday-video {
+  max-width: 80%;   /* not wider than screen */
+  max-height: 80vh; /* not taller than 70% of screen height */
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
