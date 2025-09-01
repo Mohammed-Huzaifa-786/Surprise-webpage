@@ -53,10 +53,20 @@ function showNextImage() {
     document.querySelector('.special-btn').style.display = 'inline-block';
   }
 }
-
 function showShayari() {
   document.querySelector('.special-btn').style.display = 'none';
   document.getElementById('shayari').style.display = 'block';
+
+  // Show video after shayari
+  setTimeout(() => {
+    document.getElementById('video-section').style.display = 'block';
+    const video = document.getElementById('birthday-video');
+    if (video) {
+      video.play().catch(() => {
+        // some browsers block autoplay, so user can press play
+      });
+    }
+  }, 5000); // 5 sec delay
 }
 
 function createParticles() {
@@ -79,3 +89,4 @@ window.onload = () => {
   createParticles();
   setInterval(createParticles, 5000);
 };
+
